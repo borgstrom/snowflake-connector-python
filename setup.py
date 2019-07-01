@@ -35,8 +35,6 @@ setup(
     python_requires='>=2.7.9,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*',
 
     install_requires=[
-        'azure-common',
-        'azure-storage-blob',
         'boto3>=1.4.4,<1.10.0',
         'botocore>=1.5.0,<1.13.0',
         'certifi',

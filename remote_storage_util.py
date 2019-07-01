@@ -12,10 +12,11 @@ import time
 from collections import namedtuple
 from logging import getLogger
 
-from .azure_util import SnowflakeAzureUtil
 from .constants import (SHA256_DIGEST, ResultStatus)
 from .encryption_util import (SnowflakeEncryptionUtil)
 from .s3_util import SnowflakeS3Util
+
+SnowflakeAzureUtil = None
 
 DEFAULT_CONCURRENCY = 1
 DEFAULT_MAX_RETRY = 5

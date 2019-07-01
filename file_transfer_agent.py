@@ -17,7 +17,6 @@ from time import (time, sleep)
 
 import botocore.exceptions
 
-from .azure_util import SnowflakeAzureUtil
 from .compat import (GET_CWD, TO_UNICODE, IS_WINDOWS)
 from .constants import (SHA256_DIGEST, ResultStatus)
 from .converter_snowsql import SnowflakeConverterSnowSQL
@@ -37,6 +36,8 @@ from .remote_storage_util import (SnowflakeFileEncryptionMaterial,
                                   SnowflakeRemoteStorageUtil,
                                   )
 from .s3_util import SnowflakeS3Util
+
+SnowflakeAzureUtil = None
 
 S3_FS = u'S3'
 AZURE_FS = u'AZURE'
